@@ -2211,6 +2211,7 @@ version = "0.1.0"
 dependencies = [
  "askama",
  "axum 0.7.4",
+ "cfg-if",
  "macroquad",
  "miniquad 0.3.16",
  "sapp-wasm",
