@@ -1,0 +1,22 @@
+{
+  "fmt": {
+    "include": ["."],
+    "exclude": ["lib", "target", "wasmbuild"]
+  },
+  "lint": {
+    "include": ["."],
+    "exclude": ["pkg/"],
+    "rules": {
+      "tags": ["recommended"]
+    }
+  },
+  "tasks": {
+    "watch:css": "deno run --allow-read --allow-net --allow-write lightningcss.ts"
+  },
+  "imports": {
+    "@/": "./",
+    "$std/": "https://deno.land/std@0.214.0/",
+    "browserslist": "https://esm.sh/browserslist@4.22.3",
+    "lightningcss": "https://esm.sh/lightningcss-wasm@1.23.0"
+  }
+}

@@ -1,0 +1,34 @@
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="alternate icon"
+      href="/favicon.ico"
+      type="image/png"
+      sizes="16x16"
+    />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="192x192" />
+    <link rel="mask-icon" href="/favicon.svg" />
+    <title>Square Eater</title>
+    <style>
+      {{ css|escape("none") }}
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Square Eater</h1>
+      <canvas id="glcanvas" tabindex="1"></canvas>
+      <h1>How to play</h1>
+      <p>
+        Eat as many squares as you can before the swarm gets you! Eat yellow
+        squares to repel the swarm.
+      </p>
+      <script src="https://not-fl3.github.io/miniquad-samples/mq_js_bundle.js"></script>
+      <script>
+        load("square_eater.wasm");
+      </script>
+    </main>
+  </body>
+</html>
